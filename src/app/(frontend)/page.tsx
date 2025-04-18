@@ -4,11 +4,12 @@ import { EventItemHeader8 } from "@/components/EventItemHeader8";
 import { Layout249 } from "@/components/Layout249";
 import { Cta27 } from "@/components/Cta27";
 import { Gallery9 } from "@/components/Gallery9";
+import PortfolioCms from "@/components/PortfolioCms";
 import { Layout5 } from "@/components/Layout5";
 import { Contact10 } from "@/components/Contact10";
 import { Footer1 } from "@/components/Footer1";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
        <Navbar16 />
@@ -16,6 +17,7 @@ export default function Home() {
       <Layout249 />
       <Cta27 />
       <Gallery9 />
+      <PortfolioCms />
       <Layout5 />
       <Contact10 />
       <Footer1 />
