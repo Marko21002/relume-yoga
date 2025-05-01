@@ -49,7 +49,7 @@ export function EventItemHeader8() {
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero/castle.jpg"
+          src="/hero/castle.JPG"
           className="size-full object-cover"
           alt="Schloss Thalheim Luxury Castle"
         />
