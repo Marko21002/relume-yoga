@@ -42,7 +42,6 @@ export const Contact6 = (props: Contact6Props) => {
   const [emailInput, setEmailInput] = useState("");
   const [phoneInput, setPhoneInput] = useState("");
 
-  const [selectedVenue, setSelectedVenue] = useState("");
   const [selectedEventType, setSelectedEventType] = useState("");
   const [guestCount, setGuestCount] = useState("");
 
@@ -56,23 +55,12 @@ export const Contact6 = (props: Contact6Props) => {
       lastNameInput,
       emailInput,
       phoneInput,
-      selectedVenue,
       selectedEventType,
       guestCount,
       messageInput,
       acceptTerms,
     });
   };
-
-  const venueOptions = [
-    { value: "hall-lakshmi-i", label: "Hall Lakshmi I" },
-    { value: "hall-lakshmi-ii", label: "Hall Lakshmi II" },
-    { value: "grotto-schloss-thalheim", label: "Grotto Schloss Thalheim" },
-    { value: "yoga-barn", label: "Yoga Barn" },
-    { value: "meditation-studio", label: "Meditation Studio" },
-    { value: "cellar-wine-room", label: "Cellar Wine Room" },
-    { value: "conference-center", label: "Conference Center" },
-  ];
 
   const eventTypes = [
     { value: "wedding", label: "Wedding" },
@@ -178,38 +166,20 @@ export const Contact6 = (props: Contact6Props) => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="grid w-full items-center">
-              <Label className="mb-2 text-[#64625B] font-medium">Venue of Interest</Label>
-              <Select onValueChange={setSelectedVenue}>
-                <SelectTrigger className="border-[#64625B]/30 focus:border-[#64625B] focus:ring-[#64625B]/20">
-                  <SelectValue placeholder="Select a venue..." />
-                </SelectTrigger>
-                <SelectContent>
-                  {venueOptions.map((item, index) => (
-                    <SelectItem key={index} value={item.value}>
-                      {item.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="grid w-full items-center">
-              <Label className="mb-2 text-[#64625B] font-medium">Event Type</Label>
-              <Select onValueChange={setSelectedEventType}>
-                <SelectTrigger className="border-[#64625B]/30 focus:border-[#64625B] focus:ring-[#64625B]/20">
-                  <SelectValue placeholder="Select event type..." />
-                </SelectTrigger>
-                <SelectContent>
-                  {eventTypes.map((item, index) => (
-                    <SelectItem key={index} value={item.value}>
-                      {item.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
+          <div className="grid w-full items-center">
+            <Label className="mb-2 text-[#64625B] font-medium">Event Type</Label>
+            <Select onValueChange={setSelectedEventType}>
+              <SelectTrigger className="border-[#64625B]/30 focus:border-[#64625B] focus:ring-[#64625B]/20">
+                <SelectValue placeholder="Select event type..." />
+              </SelectTrigger>
+              <SelectContent>
+                {eventTypes.map((item, index) => (
+                  <SelectItem key={index} value={item.value}>
+                    {item.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           <div className="grid w-full items-center">

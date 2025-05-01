@@ -14,7 +14,7 @@ import { Header78 } from "@/components/Header78";
 import { Contact18 } from "@/components/Contact18";
 import { Header26 } from "@/components/Header26";
 import { Contact6 } from "@/components/Contact6";
-
+import { Cta25 } from "@/components/Cta25";
 export default async function Home() {
   return (
     <div>
@@ -23,6 +23,7 @@ export default async function Home() {
        <EventItemHeader8/>  
       {/* <EventItemHeader8 /> */}
       <Portfolio16 />
+      <Cta25/>
       <Contact6/>
       {/* <Contact18/>
       

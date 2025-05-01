@@ -2,7 +2,7 @@
 
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 
@@ -43,13 +43,32 @@ export const Portfolio16 = (props: Portfolio16Props) => {
   
   const [showAllVenues, setShowAllVenues] = useState(false);
   const visibleVenues = showAllVenues ? venues : venues.slice(0, 3);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const toggleVenues = () => {
+    // Save the current scroll position before changing state
+    const scrollPosition = window.scrollY;
+    
     setShowAllVenues(!showAllVenues);
+    
+    // If we're hiding venues, maintain scroll position
+    if (showAllVenues) {
+      // Use setTimeout to execute after state update and re-render
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollPosition - (venues.length - 3) * 100, // Approximate adjustment
+          behavior: "auto"
+        });
+      }, 10);
+    }
   };
 
   return (
-    <section id="relume" className="relative px-[5%] py-16 md:py-24 lg:py-28 bg-white font-serif overflow-hidden">
+    <section 
+      id="relume" 
+      className="relative px-[5%] py-16 md:py-24 lg:py-28 bg-white font-serif overflow-hidden"
+      ref={sectionRef}
+    >
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#64625B]/30 to-transparent opacity-40"></div>
       <div className="container">
         <motion.header 
