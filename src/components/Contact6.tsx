@@ -7,8 +7,6 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-  RadioGroup,
-  RadioGroupItem,
   Input,
   Label,
   Checkbox,
@@ -16,7 +14,7 @@ import {
   Button,
 } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
-import { BiEnvelope, BiMap, BiPhone, BiCalendarAlt, BiUser } from "react-icons/bi";
+import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
 
 type Props = {
   tagline: string;

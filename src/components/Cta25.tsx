@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from "@relume_io/relume-ui";
+import { ButtonProps } from "@relume_io/relume-ui";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiPhone } from "react-icons/bi";
 
@@ -7,13 +7,12 @@ type Props = {
   description: string;
   phoneNumber: string;
   whatsappLink: string;
-  buttons: ButtonProps[];
 };
 
 export type Cta25Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Cta25 = (props: Cta25Props) => {
-  const { heading, description, phoneNumber, whatsappLink, buttons } = {
+  const { heading, description, phoneNumber, whatsappLink } = {
     ...Cta25Defaults,
     ...props,
   };
@@ -59,5 +58,4 @@ export const Cta25Defaults: Props = {
     "We offer many more exclusive areas not showcased on our website. Contact our manager for personalized recommendations and to discuss how we can accommodate your specific event needs.",
   phoneNumber: "+43 1234 567890",
   whatsappLink: "https://wa.me/431234567890",
-  buttons: [],
 };
