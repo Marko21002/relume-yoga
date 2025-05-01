@@ -1,4 +1,3 @@
-import { ButtonProps } from "@relume_io/relume-ui";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiPhone } from "react-icons/bi";
 

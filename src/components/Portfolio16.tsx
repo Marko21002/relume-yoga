@@ -2,7 +2,7 @@
 
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoChevronForwardOutline, IoChevronBackOutline } from "react-icons/io5";
 
@@ -22,7 +22,6 @@ type VenueProps = {
   capacity: string;
   pricing: string;
   keyPoints: KeyPoint[];
-  button: ButtonProps;
 };
 
 type Props = {
@@ -120,9 +119,8 @@ export const Portfolio16 = (props: Portfolio16Props) => {
   );
 };
 
-const Venue: React.FC<VenueProps> = ({ title, description, images, capacity, pricing, keyPoints, button }) => {
+const Venue: React.FC<VenueProps> = ({ title, description, images, capacity, pricing, keyPoints }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovering, setIsHovering] = useState(false);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -137,8 +135,6 @@ const Venue: React.FC<VenueProps> = ({ title, description, images, capacity, pri
       <div className="relative">
         <div 
           className="relative w-full pt-[75%] shadow-md rounded-sm overflow-hidden transition-transform duration-500 hover:scale-[1.02]"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -255,10 +251,6 @@ const venue = {
     { label: "Ideal for seminars & workshops" },
     { label: "Perfect for private events" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 const venue2 = {
@@ -289,10 +281,6 @@ const venue2 = {
     { label: "Ideal for corporate events" },
     { label: "Suitable for large seminars" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 const venue3 = {
@@ -323,10 +311,6 @@ const venue3 = {
     { label: "Perfect for meditation" },
     { label: "Energy harmonization space" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 const venue4 = {
@@ -357,10 +341,6 @@ const venue4 = {
     { label: "Ideal for yoga retreats" },
     { label: "Overnight stay capability" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 const venue5 = {
@@ -391,10 +371,6 @@ const venue5 = {
     { label: "Perfect for wellness retreats" },
     { label: "Meditation-focused setup" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 const venue6 = {
@@ -425,10 +401,6 @@ const venue6 = {
     { label: "Exclusive dining setup" },
     { label: "Atmospheric lighting" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 const venue7 = {
@@ -459,10 +431,6 @@ const venue7 = {
     { label: "Versatile workshop space" },
     { label: "High-speed connectivity" },
   ],
-  button: {
-    title: "View Details",
-    variant: "primary" as const,
-  },
 };
 
 export const Portfolio16Defaults: Props = {
