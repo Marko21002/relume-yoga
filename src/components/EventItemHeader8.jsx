@@ -53,8 +53,7 @@ export function EventItemHeader8() {
           className="size-full object-cover"
           alt="Schloss Thalheim Luxury Castle"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#000]/60 via-[#000]/50 to-[#000]/60" />
-        <div className="absolute inset-0 bg-[#000]/20" />
+        <div className="absolute inset-0 bg-black/40" style={{zIndex: 1}} />
       </div>
     </section>
   );
