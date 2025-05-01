@@ -229,11 +229,11 @@ const venue = {
   capacity: "Up to 50 people",
   pricing: "100 sq. m",
   keyPoints: [
+    { label: "Unique historical ambiance" },
+    { label: "Modern technical equipment" },
     { label: "Exquisite vaulted ceiling" },
     { label: "Soft acoustics" },
-    { label: "Modern equipment" },
-    { label: "Historical ambiance" },
-    { label: "Ideal for seminars" },
+    { label: "Ideal for seminars & workshops" },
     { label: "Perfect for private events" },
   ],
   button: {
@@ -263,12 +263,12 @@ const venue2 = {
   capacity: "Up to 150 people",
   pricing: "150 sq. m",
   keyPoints: [
+    { label: "Spacious conference setup" },
     { label: "Modern technology" },
-    { label: "Historical charm" },
+    { label: "Elegant historical charm" },
     { label: "Inspiring atmosphere" },
-    { label: "Perfect for conferences" },
-    { label: "Suitable for corporate events" },
-    { label: "Spacious layout" },
+    { label: "Ideal for corporate events" },
+    { label: "Suitable for large seminars" },
   ],
   button: {
     title: "View Details",
@@ -277,32 +277,32 @@ const venue2 = {
 };
 
 const venue3 = {
-  title: "Amphitheater",
+  title: "Grotto Schloss Thalheim",
   description:
-    "Our beautiful outdoor amphitheater offers a unique setting for performances, ceremonies, and special events with stunning natural acoustics.",
+    "A unique underground sanctuary restored to its ancient essence. Exposed frescoes, baroque ornaments, and timeless stonework create an atmosphere ideal for deep meditation, self-discovery, and energy harmonization.",
   images: [
     {
-      src: "/hero/Amphitheater.jpg",
-      alt: "Amphitheater",
+      src: "/grotte/_NAG5371-HDR-Pano.jpeg",
+      alt: "Grotto Schloss Thalheim",
     },
     {
-      src: "/hero/20180115-Capture0033-HDR-Pano.jpg",
-      alt: "Amphitheater Panorama",
+      src: "/grotte/_NAG4485-Pano.jpeg",
+      alt: "Grotto Interior",
     },
     {
-      src: "/hero/_NAG4443-Pano.jpeg",
-      alt: "Amphitheater Wide View",
+      src: "/grotte/_NAG5411-HDR-Pano.jpeg",
+      alt: "Grotto Detail",
     }
   ],
-  capacity: "Up to 100 people",
-  pricing: "200 sq. m",
+  capacity: "For meditation and small gatherings",
+  pricing: "250 sq. m",
   keyPoints: [
-    { label: "Natural stone seating" },
-    { label: "Professional acoustics" },
-    { label: "Lighting system" },
-    { label: "Rain coverage options" },
-    { label: "Backstage area" },
-    { label: "Panoramic views" },
+    { label: "Ancient underground sanctuary" },
+    { label: "Exposed historical frescoes" },
+    { label: "Baroque ornamental details" },
+    { label: "Timeless stonework" },
+    { label: "Perfect for meditation" },
+    { label: "Energy harmonization space" },
   ],
   button: {
     title: "View Details",
@@ -311,32 +311,32 @@ const venue3 = {
 };
 
 const venue4 = {
-  title: "Garden Pavilion",
+  title: "Yoga Barn",
   description:
-    "A charming glass-enclosed pavilion surrounded by manicured gardens. Perfect for smaller weddings, cocktail receptions, and garden parties.",
+    "An energetically powerful space built above an underground water stream. The solid oak floor and ancient beams provide ideal conditions for yoga retreats, seminars, and even overnight stays as part of events.",
   images: [
     {
-      src: "/hero/castle.jpg",
-      alt: "Garden Pavilion",
+      src: "/yoga/_NAG4676.jpeg",
+      alt: "Yoga Barn",
     },
     {
-      src: "/hero/castle2.jpg",
-      alt: "Garden Pavilion Interior",
+      src: "/yoga/_NAG4648.jpeg",
+      alt: "Yoga Session Setup",
     },
     {
-      src: "/hero/_NAG4443-Pano.jpeg",
-      alt: "Garden View",
+      src: "/yoga/_NAG4696.jpeg",
+      alt: "Yoga Barn Interior",
     }
   ],
-  capacity: "Up to 60 people",
-  pricing: "120 sq. m",
+  capacity: "50–60 people",
+  pricing: "250 sq. m",
   keyPoints: [
-    { label: "360° garden views" },
-    { label: "Climate controlled" },
-    { label: "Built-in bar area" },
-    { label: "String lighting" },
-    { label: "Private entrance" },
-    { label: "Outdoor dance floor" },
+    { label: "Energetically powerful space" },
+    { label: "Built above natural water stream" },
+    { label: "Solid oak flooring" },
+    { label: "Historic wooden beam ceiling" },
+    { label: "Ideal for yoga retreats" },
+    { label: "Overnight stay capability" },
   ],
   button: {
     title: "View Details",
@@ -365,12 +365,12 @@ const venue5 = {
   capacity: "Up to 30 people",
   pricing: "65 sq. m",
   keyPoints: [
-    { label: "Bamboo flooring" },
-    { label: "Meditation cushions" },
-    { label: "Sound therapy equipment" },
-    { label: "Adjustable lighting" },
-    { label: "Changing rooms" },
-    { label: "Tea service available" },
+    { label: "Serene environment" },
+    { label: "Minimalist design" },
+    { label: "Natural light throughout" },
+    { label: "Sustainable bamboo flooring" },
+    { label: "Perfect for wellness retreats" },
+    { label: "Meditation-focused setup" },
   ],
   button: {
     title: "View Details",
@@ -399,12 +399,12 @@ const venue6 = {
   capacity: "Up to 20 people",
   pricing: "50 sq. m",
   keyPoints: [
-    { label: "Original stone architecture" },
-    { label: "Temperature controlled" },
-    { label: "Wine tasting station" },
+    { label: "Authentic medieval atmosphere" },
+    { label: "Intimate gathering space" },
+    { label: "Perfect for wine tastings" },
+    { label: "Historic stone architecture" },
+    { label: "Exclusive dining setup" },
     { label: "Atmospheric lighting" },
-    { label: "Private dining setup" },
-    { label: "Historical tours available" },
   ],
   button: {
     title: "View Details",
@@ -433,12 +433,12 @@ const venue7 = {
   capacity: "Up to 80 people",
   pricing: "150 sq. m",
   keyPoints: [
-    { label: "HD projection system" },
-    { label: "Video conferencing" },
-    { label: "High-speed Wi-Fi" },
-    { label: "Breakout rooms" },
-    { label: "Catering options" },
-    { label: "Ergonomic seating" },
+    { label: "Elegant modern design" },
+    { label: "State-of-the-art technology" },
+    { label: "Corporate meeting setup" },
+    { label: "Professional presentation systems" },
+    { label: "Versatile workshop space" },
+    { label: "High-speed connectivity" },
   ],
   button: {
     title: "View Details",

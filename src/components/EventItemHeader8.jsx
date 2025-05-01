@@ -37,19 +37,12 @@ export function EventItemHeader8() {
               <span>Bespoke Experiences</span>
             </div>
           </div>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-y-3 gap-x-5 md:mt-12">
+          <div className="mt-10 md:mt-12">
             <Button 
-              title="Explore Venues" 
-              className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-[#64625B] text-white hover:bg-[#64625B]/90 border border-[#64625B] font-serif tracking-wider text-sm shadow-sm hover:shadow transition-all duration-300"
+              title="Book Now" 
+              className="px-8 py-3 bg-[#64625B] text-white hover:bg-[#64625B]/90 border border-[#64625B] font-serif tracking-wider text-sm shadow-sm hover:shadow transition-all duration-300"
             >
-              Explore Venues
-            </Button>
-            <Button 
-              title="Plan Your Event" 
-              variant="secondary"
-              className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-transparent text-white border border-white/30 hover:bg-white/5 font-serif tracking-wider text-sm shadow-sm hover:shadow transition-all duration-300"
-            >
-              Plan Your Event
+              Book Now
             </Button>
           </div>
         </div>

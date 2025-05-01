@@ -13,6 +13,8 @@ import { Navbar3 } from "@/components/Navbar3";
 import { Header78 } from "@/components/Header78";
 import { Contact18 } from "@/components/Contact18";
 import { Header26 } from "@/components/Header26";
+import { Contact6 } from "@/components/Contact6";
+
 export default async function Home() {
   return (
     <div>
@@ -21,9 +23,10 @@ export default async function Home() {
        <EventItemHeader8/>  
       {/* <EventItemHeader8 /> */}
       <Portfolio16 />
-      <Contact18/>
+      <Contact6/>
+      {/* <Contact18/>
       
-      <Contact10 />
+      <Contact10 /> */}
       <Footer1 />
     </div>
   );
