@@ -76,7 +76,7 @@ export function Footer1() {
                 placeholder="Your Email"
                 value={formState.email}
                 onChange={formState.handleSetEmail}
-                className="border border-[#64625B]/30 rounded-md p-2 text-sm text-[#64625B] font-sans"
+                className="border border-[#64625B]/30 rounded-md p-2 text-sm text-[#64625B] font-sans shadow-sm"
               />
               <Button 
                 title="Subscribe" 
